@@ -1,1 +1,160 @@
+:root {
+  --accent-burgundy: #8b1e3f;
+  --text-dark: #2d2d2d;
+  --background-light: #fdf7f2;
+  --background-sand: #f2e8de;
+  --border-light: #e5e7eb;
+  --muted-gray: #6b7280;
+  --hover-blue: #2563eb;
+  --white: #ffffff;
+}
 
+/* Загальний стиль для тексту та фонів */
+body {
+  font-family: "Lato", "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  font-feature-settings: "liga" 1;
+  background-image: url("textures/paper-texture.jpg"); /* додаємо текстуру паперу як фон */
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Стиль для заголовків */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 0.5em;
+  color: var(--accent-burgundy);
+}
+
+/* Стиль для основного тексту */
+p {
+  margin: 0.5em 0;
+  font-family: "Lato", "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+/* Лінки */
+a {
+  color: var(--accent-burgundy);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-blue);
+}
+
+/* Заголовок і футер */
+header,
+footer {
+  background-color: var(--white);
+  padding: 1em 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для контенту */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+/* Логотип та заголовок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.logo-title img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Секції */
+section {
+  padding: 2.5em 0;
+}
+
+/* Альтернативний фон для секцій */
+.alt {
+  background-color: var(--background-sand);
+}
+
+/* Сітка */
+.grid {
+  display: grid;
+  gap: 1em;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Стиль для карток */
+.card {
+  border: 1px solid var(--border-light);
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+/* Центрування */
+.center {
+  text-align: center;
+}
+
+/* Мутований текст */
+.muted {
+  color: var(--muted-gray);
+  font-size: 0.9em;
+}
+
+/* Стилі для слайдера */
+.swiper {
+  padding-bottom: 2em;
+}
+
+.swiper-slide {
+  background-color: var(--white);
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Медіа запити */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Акценти з текстурою */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
