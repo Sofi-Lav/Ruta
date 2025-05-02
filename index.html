@@ -13,7 +13,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
     ></script>
-    <script defer src="script.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <header class="container header">
@@ -21,22 +21,32 @@
         <img src="img/logo-Ruta.jpg" alt="RUTA Logo" />
         <h1>RUTA — Освітній простір</h1>
       </div>
-      <a href="https://instagram.com/ruta.prostir.bal" target="_blank"
-        ><svg width="25" height="25"><use href="./img/symbol-defs.svg#icon-instagram"></svg></a>
+      <button class="menu-toggle" aria-label="Меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#history">Історія</a>
+        <a href="#services">Послуги</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#blog">Блог</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
     </header>
 
     <section class="hero">
       <div class="container">
-        <h2>Історія створення</h2>
-        <p>
-          ...
-        </p>
+        <h2 id="history">Історія створення</h2>
+        <p>...</p>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <h2>Послуги</h2>
+        <h2 id="services">Послуги</h2>
         <div class="grid grid-2">
           <div class="card">
             <h3>Рівні</h3>
@@ -44,23 +54,19 @@
           </div>
           <div class="card">
             <h3>Вік учнів</h3>
-            <p>
-              ...
-            </p>
+            <p>...</p>
           </div>
           <div class="card">
             <h3>Системи навчання</h3>
-            <p>
-              ...
-            </p>
+            <p>...</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="alt">
-      <div class="container">
-        <h2>Відгуки наших учнів</h2>
+      <div class="container swiper-container">
+        <h2 id="reviews">Відгуки наших учнів</h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -83,6 +89,12 @@
               <p>— Марія С.</p>
             </div>
           </div>
+
+          <!-- Навігаційні стрілки -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- Пагінація -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -90,7 +102,7 @@
 
     <section>
       <div class="container">
-        <h2>Блог</h2>
+        <h2 id="blog">Блог</h2>
         <p class="center muted">
           Незабаром — поради, історії, ресурси для натхнення та практики.
         </p>
@@ -99,7 +111,7 @@
 
     <section class="alt">
       <div class="container">
-        <h2>Instagram-стрічка</h2>
+        <h2 id="instagram">Instagram-стрічка</h2>
         <div class="grid grid-3">
           <blockquote
             class="instagram-media"
@@ -149,9 +161,9 @@
 
     <footer>
       <div class="container">
-        <h3>Контакти</h3>
+        <h3 id="contacts">Контакти</h3>
         <p>Email:</p>
-        <p>Телефон: </p>
+        <p>Телефон:</p>
         <p class="muted">© <span id="year"></span> RUTA. Всі права захищені.</p>
       </div>
     </footer>
