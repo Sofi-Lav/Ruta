@@ -64,11 +64,6 @@ footer {
   padding: 0 1.5em;
 }
 
-.swiper-container {
-  width: 1000px;
-  padding: 20px;
-}
-
 /* Логотип та заголовок */
 .header {
   display: flex;
