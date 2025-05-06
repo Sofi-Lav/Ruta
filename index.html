@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link href="img/logo-Ruta.png" rel="icon" />
+    <link href="img/logo-Ruta.png" rel="apple-touch-icon" />
+
     <link rel="stylesheet" href="css/style.css" />
     <script
       defer
@@ -16,25 +19,26 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <header class="container header">
-      <div class="logo-title">
-        <img src="img/logo-Ruta.jpg" alt="RUTA Logo" />
-        <h1>RUTA — Освітній простір</h1>
+    <header class="container">
+      <div class="conainer header-container">
+        <div class="logo-title">
+          <img src="img/logo-Ruta.jpg" alt="RUTA Logo" />
+          <h1>RUTA — Освітній простір</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Меню">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav menu" id="nav">
+          <a href="#history">Історія</a>
+          <a href="#services">Послуги</a>
+          <a href="#reviews">Відгуки</a>
+          <a href="#blog">Блог</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
       </div>
-      <button class="menu-toggle" aria-label="Меню">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <nav class="nav" id="nav">
-        <a href="#history">Історія</a>
-        <a href="#services">Послуги</a>
-        <a href="#reviews">Відгуки</a>
-        <a href="#blog">Блог</a>
-        <a href="#instagram">Instagram</a>
-        <a href="#contacts">Контакти</a>
-      </nav>
     </header>
 
     <section class="hero">
@@ -112,50 +116,49 @@
     <section class="alt">
       <div class="container">
         <h2 id="instagram">Instagram-стрічка</h2>
-        <div class="grid grid-3">
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C-IF6IoNrue/?locale=ru&img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C-BD1iaNj_u/?img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C9as7tbNa2y/?img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C9an7LDtLa-/?img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C9amOjftLjB/?img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C9akFfdtIBy/?img_index=1"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/p/C9aeMKVtwoQ/"
-            data-instgrm-version="14"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
+        <div class="inst-container">
+          <div class="grid grid-2">
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C-IF6IoNrue/?locale=ru&img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C-BD1iaNj_u/?img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C9as7tbNa2y/?img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C9an7LDtLa-/?img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C9amOjftLjB/?img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C9akFfdtIBy/?img_index=1"
+              data-instgrm-version="14"
+            ></blockquote>
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/C9aeMKVtwoQ/"
+              data-instgrm-version="14"
+            ></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
         </div>
+      </div>
+      <div>
+        <a href="./index.html" class="button-go-current"></a>
       </div>
     </section>
 
