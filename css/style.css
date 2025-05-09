@@ -43,10 +43,12 @@ a {
   color: var(--accent-burgundy);
   text-decoration: underline;
   transition: color 0.3s ease;
+  text-decoration: none; /* Прибирає підкреслення */
 }
 
-a:hover {
-  color: var(--accent-burgundy);
+.a-menu:hover {
+  color: #690221;
+  font-weight: bold;
 }
 
 /* Заголовок і футер */
