@@ -299,3 +299,14 @@ a.FollowButton {
 .menu {
   position: fixed;
 }
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-around;
+}
